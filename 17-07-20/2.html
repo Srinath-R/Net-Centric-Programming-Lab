@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title></title>    
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+      
+            .column {
+              float: left;
+              width: 25%;
+              padding: 0 10px;
+            }
+            
+   
+            .row {margin: 0 -5px;}
+            
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+              }
+            }
+            
+
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              padding: 16px;
+              text-align: center;
+              background-color: #f1f1f1;
+            }
+            </style>    
+    </head>
+    <body>
+        <div>
+            <h2>Welcome to the BBC</h2>
+            <p>Friday, 23 December</p>
+        </div>
+        <div class="row">
+
+            <div class="column">
+              <div class="card">
+                <img src="2-1.JPG" alt="">
+                <p><b>England chase 284 against South Africa</b></p>
+              </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="2-2.JPG" alt="">
+                    <p><b>Astronomers warn of threat to Universe</b></p>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                    <img src="2-3.JPG" alt="">
+                    <p><b>Ancient Mayan palace withdrawn in Mexico city</b></p>
+                </div>
+              </div>
+        </div>   
+    </body>
+</html>   

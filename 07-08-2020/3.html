@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Done By Srinath R - CB.EN.U4CSE17361
+        </title>
+    </head>
+
+    <body>
+        <center>
+            <img src="image.png" usemap="#map" />
+            <map name="map">
+                <area shape="rect" coords="0,0,340,460" onmouseover="fun1()" onmouseout="out()" onclick="clickit()"/>
+                <area shape="rect" coords="340,0,780,460" onmouseover="fun2()" onmouseout="out()" onclick="clickit()"/>
+            </map>
+            <p id="text">Text will be displayed here based on where the cursor is...</p>
+        </center>
+    </body>
+    <script>
+        function fun1() 
+        { 
+            document.getElementById("text").innerText="Cursor is on left side of the image.";
+        }
+        function fun2()
+        {
+            document.getElementById("text").innerText = "Cursor is on right side of the image.";
+        }
+        function out()
+        {
+            document.getElementById("text").innerText= "Cursor is outside of the image.";
+        }
+        function clickit()
+        {
+            window.open("enlarged_image.html");
+        }
+    </script>
+</html>

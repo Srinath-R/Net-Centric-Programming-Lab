@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Done By Srinath R - CB.EN.U4CSE17361</title>
+    </head>
+
+    <script type="text/javascript">
+    let fib = {};
+    
+    function Fib(n) 
+    {
+        if (n <= 1) 
+            return n;
+
+        if (fib[n]) 
+        {
+            return fib[n];
+        }
+
+        fib[n] = Fib(n - 1) + Fib(n - 2);
+        
+        return fib[n];
+    }
+
+    function FIB()
+    {
+        var n;
+        n = parseFloat(prompt("Enter a number:"));
+        document.write("Fibonacci number for the given number is: "+Fib(n));
+    }
+    </script>
+
+    <body>
+        <center>
+            <input type="button" value="Find Fibonacci!" onclick="FIB()" />
+        </center>
+    </body>
+
+</html>

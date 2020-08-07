@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Done By Srinath R - CB.EN.U4CSE17361</title>
+    </head>
+
+    <script type="text/javascript">
+    let str = [];
+
+    function SORT()
+    {
+        var s;
+        s = prompt("Enter a name (or enter 'end' to stop):");
+        while(s != "end")
+        {
+            str.push(s);
+            s = prompt("Enter a name (or enter 'end' to stop):");
+        }
+        str.sort();
+        document.write("Names in alphabetical order are: "+str);
+        
+    }
+    </script>
+
+    <body>
+        <center>
+            <input type="button" value="Click to start sorting!" onclick="SORT()" />
+        </center>
+    </body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Done By Srinath R - CB.EN.U4CSE17361</title>
+    </head>
+
+    <script type="text/javascript">
+    let numbers = [];
+
+    function histogram()
+    {
+        var n = prompt("Enter a number (or click cancel to stop):");
+        while(!isNaN(n) && n != "" && n != null)
+        {
+            numbers.push(parseInt(n));
+            n = prompt("Enter a number (or click cancel to stop):");
+        }
+        var pattern = "";
+        var l = Math.max(...numbers);
+
+        for(var i = 0; i < l; i++)
+        {
+            pattern += "<p>";
+            for(var j = 0; j < numbers.length; j++)
+            {
+                if(numbers[j] > 0)
+                {
+                    pattern += "*";
+                    numbers[j] -= 1;
+                }
+            }
+ 
+            pattern += "</p>\n";
+        }
+
+        document.getElementById("histo").innerHTML = pattern;
+
+        
+    }
+    </script>
+
+    <body>
+        <center>
+            <input type="button" value="Click to start entering numbers!" onclick="histogram()" />
+        </center>
+        <div id="histo">
+
+        </div>
+    </body>
+
+</html>

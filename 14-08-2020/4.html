@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Done By Srinath R - CB.EN.U4CSE17361
+    </title>
+</head>
+
+<script type="text/javascript">
+    function DOB(input)
+    {
+        var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\-](0?[1-9]|1[012])[\-]\d{4}$/;
+        // Match the date format through regular expression
+
+        if(input.match(dateformat))
+        {
+            document.write("Correct Date Format!");
+        }
+        else
+        {
+            alert("Invalid date format!");
+        }
+    }
+
+</script>
+
+<body>
+    <center>
+    <h2>Enter your Date of Birth: </h2>
+
+    <form action="#">
+    <label for="dob">Birthday: </label>
+    <input type="text" id="dob" name="dob"/>
+    <input type="submit" value="Submit" onclick="DOB(document.getElementById('dob').value)"/>
+    </form>
+    <p id="out"></p>
+    </center>
+</body>
+</html>

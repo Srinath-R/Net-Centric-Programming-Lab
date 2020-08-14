@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Done By Srinath R - CB.EN.U4CSE17361</title>
+    </head>
+
+    <script type="text/javascript">
+    let str = [];
+
+    function reverse_sort()
+    {
+        var s;
+        s = prompt("Enter a word (or click 'cancel' button to stop):");
+        while(s != null && s != "")
+        {
+            str.push(s);
+            s = prompt("Enter a word (or click 'cancel' button to stop):");
+        }
+        str.sort();
+        str.reverse();
+        document.write("Words in reverse lexicographical order are: "+str);
+        
+    }
+    </script>
+
+    <body>
+        <center>
+            <input type="button" value="Click to start reverse sorting!" onclick="reverse_sort()" />
+        </center>
+    </body>
+
+</html>

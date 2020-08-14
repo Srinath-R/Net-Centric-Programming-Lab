@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Done By Srinath R - CB.EN.U4CSE17361</title>
+    </head>
+
+    <script type="text/javascript">
+
+    function FizzBuzz()
+    {
+        var print = "";
+
+        for(var i = 1; i <= 100; i++)
+        {
+          if(i % 3 == 0)
+            print += "Fizz";
+
+          if(i % 5 == 0)
+            print += "Buzz";
+            
+          else if(i % 3 != 0 && i % 5 != 0)
+            print += i;      
+
+          print += "<br/>";
+        }
+
+        document.getElementById("FB").innerHTML = print;
+    }
+    </script>
+
+    <body>
+        <center>
+            <input type="button" value="Click to play FizzBuzz!" onclick="FizzBuzz()" />
+            <div id="FB">
+
+            </div>
+        </center>
+        
+    </body>
+
+</html>

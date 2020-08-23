@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Done By Srinath R - CB.EN.U4CSE17   61
+    </title>
+</head>
+
+<script type = "text/javascript">
+
+</script>
+
+<body>
+    <center>
+        <label for = "chapter">Chapter Title: </label>
+        <input type = "text" name = "chapter" id ="chapter">
+        &ensp;
+        <label for = "page">Page No. : </label>
+        <input type = "number" name = "page" id = "page">
+        <input type = "button" name = "submit" id = "submit" value="Add" onclick = "addEntry()" onk>
+    </center>
+
+    <h2>Table of Contents</h2>
+    <ol id = "list" start = "1"></ol>
+
+    <script>
+        document.addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                addEntry();
+            }
+        });
+
+        var l = [];
+
+        function addEntry()
+        {
+            var chap = document.getElementById("chapter").value;
+            var page = document.getElementById("page").value;
+
+            if(chap == "" || page == "")
+            {
+                alert("Fields empty!!!");
+            }
+
+            else
+            {
+                l.push({ chap: chap, page: page })
+
+                l = l.sort(function (a, b) 
+                {
+                    return parseInt(a.page) - parseInt(b.page)
+                })
+
+                var output = "";
+                for(var i = 0; i < l.length; i++) 
+                {
+                    output += "<li>";
+                    var len = l[i].chap.length;
+                    console.log(len + " " + l[i].page.length);
+                    output += l[i].chap;
+                    for(var j = 0; j < (50 - (len + l[i].page.length)); j++) 
+                    {
+                        output += ".";
+                    }
+                    output += l[i].page + "</li>\n";
+                }
+                
+                document.getElementById("list").innerHTML = output;
+                document.getElementById("chapter").value = "";
+                document.getElementById("page").value = "";
+            }
+            
+        }
+    </script>
+ 
+</body>
+
+</html>

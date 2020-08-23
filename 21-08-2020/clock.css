@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url(digital-7.ttf);
+    font-size: 56px;
+ }
+/* https://fonts.googleapis.com/css?family=Orbitron */
+body {
+  background-color: #121212;
+  font-family: 'Digital-7', monospace;
+}
+
+#day{
+    font-family: 'Digital-7', monospace;
+    color: #66ff99;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+#time {
+  font-family: 'Digital-7', monospace;
+  color: #66ff99;
+  font-size: 76px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#date{
+    font-family: 'Digital-7', monospace;
+    color: #66ff99;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.controls {
+  text-align: center;
+}
+
+.button {
+  font-size: 36px;
+  text-align: center;
+  color:#66ff99;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.button:first-child {
+    margin-left: 0;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
+
+.button:hover {
+  color: white;
+}
+
+.stopwatch {
+  font-size: 5vw;
+  color:#66ff99;
+  /* line-height: 100vh; */
+  text-align: center;
+}
+
+.results {
+  border-color: lime;
+  color: #bbb;
+  list-style: none;
+  font-size: 3vw;
+}
+
+#watch {
+  font-family: 'Digital-7', monospace;
+  color: #66ff99;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}

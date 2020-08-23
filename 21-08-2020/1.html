@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Done By Srinath R - CB.EN.U4CSE17361</title>
+
+  <script type="text/javascript">
+    
+    function multiplicationTable(rows, cols)
+    {
+        var j = 1;
+        var output = "<center><h2>Multiplication Table:</h2> <br/> <table border = '1' width = '500' cellspacing='1' cellpadding = '5'>";
+
+        for(i = 1; i <= rows; i++)
+        {
+            output = output + "<tr>";
+            
+            while(j <= cols)
+            {
+                output = output + "<td>" + i * j + "</td>";
+                j = j + 1;
+            }
+            
+            output = output + "</tr>";
+            j = 1;
+        }
+        output = output + "</table> </center>";
+        document.write(output);
+    }
+    
+    var rows = prompt("Enter number of rows:");
+    var cols = prompt("Enter number of columns:");
+    if(rows == "" || rows == null)
+        rows = 5;
+            
+    if(cols== "" || cols== null)
+   		cols = 5;
+    multiplicationTable(rows, cols);
+
+
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

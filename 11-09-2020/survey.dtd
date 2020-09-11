@@ -1,0 +1,13 @@
+<!-- <!DOCTYPE survey 
+[ -->
+<!ELEMENT isro (region, location, feature_type, rov_dives, area_covered, depth_range, distance, shipping, items)>
+<!ELEMENT region (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT feature_type (#PCDATA)>
+<!ELEMENT rov_dives (#PCDATA)>
+<!ELEMENT area_covered (#PCDATA)>
+<!ELEMENT depth_range (#PCDATA)>
+<!ELEMENT distance (#PCDATA)>
+<!ELEMENT shipping (#PCDATA)>
+<!ELEMENT items (#PCDATA)>
+<!-- ]> -->
